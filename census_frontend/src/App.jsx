@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { LoginPage } from './pages/auth/LoginPage'
-import { PreForm } from './pages/form/PreForm'
+import { PreFormPage } from './pages/form/PreFormPage'
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <Routes>
         <Route path='/' element={<LoginPage />} />
         <Route path='/login' element={<LoginPage />} />
-        <Route path='/preform' element={<PreForm />} />
+        <Route path='/preform' element={<PreFormPage />} />
       </Routes>
     </Router>
   )

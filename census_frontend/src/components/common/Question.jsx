@@ -1,13 +1,14 @@
-const Question = ({ label, placeholder, value, onChange }) => { 
+const Question = ({ label, type, placeholder, value, onChange }) => { 
     return (
         <div className='flex flex-col py-2'>
           <label className='font-bold'>{label}</label>
           <input
             placeholder={placeholder}
             className='mt-2 p-2 outline-principal-orange border border-principal-orange rounded'
-            type="number"
+            type={type}
             value={value}
             onChange={onChange}
+            min={1}
           />
         </div>
       );
